@@ -59,7 +59,7 @@ addBtn.addEventListener("click", () => {
 
 // ============================ [Animation section] ============================
     gsap.from("h1", {
-        x: -1000,
+        x: -10000,
         delay: 0,
     });
 
