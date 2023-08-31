@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  color: Black;
+}
+
+h1 {
+  background: hsla(221, 45%, 73%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9bafd9", endColorstr="#103783", GradientType=1 );
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: -5px 5px 6px rgba(0,0,0,0.6);
+  text-align: center;
+  font-size: 12vmin;
+  margin: 5vmin auto 10vmin;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh auto;
+}
+
+#input {
+  width: 60vw;
+  height: 3rem;
+  border-radius: 0 10px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 2.5px solid black;
+  padding: 0 6vw 0 1vw;
+}
+
+.addBtn {
+  width: 7vmin;
+  height: 5vmin;
+  color: green;
+  cursor: pointer;
+  margin: 2vw;
+  margin-left: -7vmin;
+}
+
+.empty {
+  animation: myAnim 1s ease-in 200ms 1 alternate both;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.todo-container ul {
+  margin: 0 auto 0 9vw;
+}
+
+.todo-list li {
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 60vw;
+  border-radius: 10px;
+  box-shadow: -4px 4px 6px #000000;
+  border: 2px solid gray;
+  padding: 10px 8px;
+  margin-bottom: 3vh;
+}
+
+.todo-list li:hover {
+  background: #9ec5d3;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8vw;
+}
+
+.btnContainer img{
+  cursor: pointer;
+}
+
+.btnContainer input {
+  width: 2vw;
+  height: 2vw;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
